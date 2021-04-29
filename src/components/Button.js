@@ -11,7 +11,7 @@ export const Button = styled(Link)`
   border: none;
   min-width: 100px;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: 0.3s !important;
   border-radius: ${({ round }) => (round ? "50px" : "none")};
 

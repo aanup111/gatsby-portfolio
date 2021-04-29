@@ -1,0 +1,14 @@
+[
+  {
+    "img": "../assets/Whatsapp.png",
+    "alt": "Whatsapp clone",
+    "name": "Whatsapp clone",
+    "button": "View Project"
+  },
+  {
+    "img": "../assets/Boubee.png",
+    "alt": "E-Commerce Webapp",
+    "name": "E-Commerce Webapp",
+    "button": "View Project"
+  }
+]

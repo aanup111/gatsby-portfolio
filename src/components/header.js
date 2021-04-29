@@ -8,7 +8,7 @@ import { Button } from "./Button"
 const Header = () => {
   return (
     <Nav>
-      <NavLink to="/">Anup Ghimire</NavLink>
+      <NavLink to="/Projects">Anup Ghimire</NavLink>
       <Bars />
       <NavMenu>
         {menuData.map((item, index) => (
@@ -42,7 +42,7 @@ const NavLink = styled(Link)`
   color: white;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
@@ -79,6 +79,7 @@ const NavBtn = styled.div`
   display: flex;
   align-items: center;
   margin-right: 24px;
+  text-decoration: none !important;
 
   @media screen and (max-width: 768px) {
     display: none;

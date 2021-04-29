@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import MainVideo from "../assets/video.mp4"
+import Typing from "react-typing-animation"
+import FadeIn from "react-fade-in"
 const Main = () => {
   return (
     <MainContainer>
@@ -18,8 +20,12 @@ const Main = () => {
       </MainBg>
       <MainContent>
         <MainItems>
-          <MainH1>Anup Ghimire</MainH1>
-          <MainP>Passionate Web Developer</MainP>
+          <Typing speed={120} hideCursor={true}>
+            <MainH1>Hi, I'm Anup Ghimire</MainH1>
+          </Typing>
+          <FadeIn transitionDuration={9000}>
+            <MainP>Passionate Web Developer</MainP>
+          </FadeIn>
         </MainItems>
       </MainContent>
     </MainContainer>
