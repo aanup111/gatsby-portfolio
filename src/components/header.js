@@ -5,11 +5,11 @@ import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 
-const Header = () => {
+const Header = ({ toggle }) => {
   return (
     <Nav>
-      <NavLink to="/Projects">Anup Ghimire</NavLink>
-      <Bars />
+      <Bars onClick={toggle} />
+      <NavLink></NavLink>
       <NavMenu>
         {menuData.map((item, index) => (
           <NavLink to={item.link} key={index}>
@@ -43,7 +43,7 @@ const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none !important;
-  padding: 0 1rem;
+  padding: 3rem 3rem;
   height: 100%;
   cursor: pointer;
   font-weight: bold;
@@ -62,6 +62,7 @@ const Bars = styled(FaBars)`
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+    z-index: -1;
   }
 `
 

@@ -15,8 +15,4 @@ export const menuData = [
     title: "Resume",
     link: "/resume",
   },
-  {
-    title: "Contact",
-    link: "/contact",
-  },
 ]
