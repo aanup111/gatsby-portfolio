@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <Container>
+    <Container id="contact">
       <FormContainer>
         <FormHeader>Get in touch with me</FormHeader>
         <form onSubmit={sendEmail}>

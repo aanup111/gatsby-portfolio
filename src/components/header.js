@@ -1,24 +1,44 @@
 import * as React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
+import { Link } from "react-scroll"
 
 const Header = ({ toggle }) => {
   return (
     <Nav>
       <Bars onClick={toggle} />
-      <NavLink></NavLink>
+      <div></div>
       <NavMenu>
         {menuData.map((item, index) => (
-          <NavLink to={item.link} key={index}>
+          <NavLink
+            activeClass="active"
+            key={index}
+            spy={true}
+            smooth={true}
+            duration={2000}
+            delay={300}
+            to={item.link}
+            activeClassName="selected"
+          >
             {item.title}
           </NavLink>
         ))}
       </NavMenu>
       <NavBtn>
-        <Button primary="true" round="true" to="/contact">
+        <Button
+          primary="true"
+          round="true"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={2000}
+          delay={300}
+          to="contact"
+          activeClassName="selected"
+        >
           Contact Me
         </Button>
       </NavBtn>
@@ -35,7 +55,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 1000;
-  position: relative;
 `
 
 const NavLink = styled(Link)`

@@ -16,7 +16,7 @@ const Project = ({ image, title, description, codeLink, appLink }) => {
         <a href={appLink} className="btn btn-outline-success">
           View App
         </a>
-        <a href="#" className="btn btn-outline-success">
+        <a href={codeLink} className="btn btn-outline-success">
           Live Demo
         </a>
         <Test>haha</Test>

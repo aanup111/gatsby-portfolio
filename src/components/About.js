@@ -3,45 +3,43 @@ import styled from "styled-components"
 
 const About = () => {
   return (
-    <div>
-      <AboutContainer>
-        <Title>About me</Title>
-        <AboutWrapper>
-          <AboutSection>
-            <MiniTitle>Hello!</MiniTitle>
-            My name is Anup Ghimire and I am a passionate Web Developer. I love
-            learning and using various web technologies and libraries to build
-            amazing products. Recently I have been learning quite a bit of React
-            and building multiple projects using React and in the procecess I
-            may have fallen in love with React. I find great joy in solving
-            problems, learning new languages and technologies and applying those
-            skills in real applications.
-          </AboutSection>
-          <SkillsSection>
-            <MiniTitle>Skills</MiniTitle>
-            <Skills>
-              <SkillTag>Java</SkillTag>
-              <SkillTag>C#</SkillTag>
-              <SkillTag>PHP</SkillTag>
-              <SkillTag>ASP.NET</SkillTag>
-            </Skills>
-            <Skills>
-              <SkillTag>React</SkillTag>
-              <SkillTag>Redux</SkillTag>
-              <SkillTag>NodeJs</SkillTag>
-              <SkillTag>NextJs</SkillTag>
-              <SkillTag>jQuery</SkillTag>
-            </Skills>
-            <Skills>
-              <SkillTag>MySQL</SkillTag>
-              <SkillTag>IndexDB</SkillTag>
-              <SkillTag>MariaDB</SkillTag>
-              <SkillTag>MongoDB</SkillTag>
-            </Skills>
-          </SkillsSection>
-        </AboutWrapper>
-      </AboutContainer>
-    </div>
+    <AboutContainer id="about">
+      <Title>About me</Title>
+      <AboutWrapper>
+        <AboutSection>
+          <MiniTitle>Hello!</MiniTitle>
+          My name is Anup Ghimire and I am a passionate Web Developer. I love
+          learning and using various web technologies and libraries to build
+          amazing products. Recently I have been learning quite a bit of React
+          and building multiple projects using React and in the procecess I may
+          have fallen in love with React. I find great joy in solving problems,
+          learning new languages and technologies and applying those skills in
+          real applications.
+        </AboutSection>
+        <SkillsSection>
+          <MiniTitle>Skills</MiniTitle>
+          <Skills>
+            <SkillTag>Java</SkillTag>
+            <SkillTag>C#</SkillTag>
+            <SkillTag>PHP</SkillTag>
+            <SkillTag>ASP.NET</SkillTag>
+          </Skills>
+          <Skills>
+            <SkillTag>React</SkillTag>
+            <SkillTag>Redux</SkillTag>
+            <SkillTag>NodeJs</SkillTag>
+            <SkillTag>NextJs</SkillTag>
+            <SkillTag>jQuery</SkillTag>
+          </Skills>
+          <Skills>
+            <SkillTag>MySQL</SkillTag>
+            <SkillTag>IndexDB</SkillTag>
+            <SkillTag>MariaDB</SkillTag>
+            <SkillTag>MongoDB</SkillTag>
+          </Skills>
+        </SkillsSection>
+      </AboutWrapper>
+    </AboutContainer>
   )
 }
 
@@ -49,14 +47,14 @@ export default About
 
 const AboutContainer = styled.div`
   background-color: whitesmoke;
-  padding-top: 10rem;
+  padding-top: 14rem;
+  padding-bottom: 22rem;
 `
 
 const AboutWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-top: 14rem;
 `
 
 const AboutSection = styled.div`

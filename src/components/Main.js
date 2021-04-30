@@ -5,7 +5,7 @@ import Typing from "react-typing-animation"
 import FadeIn from "react-fade-in"
 const Main = () => {
   return (
-    <MainContainer>
+    <MainContainer id="main">
       <MainBg>
         {
           <Video

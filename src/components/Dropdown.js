@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { menuData } from "../data/MenuData"
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 import { Button } from "./Button"
 import { FaTimes } from "react-icons/fa"
 
@@ -14,7 +14,16 @@ const Dropdown = ({ isOpen, toggle }) => {
         </Icon>
         <DropdownMenu>
           {menuData.map((item, index) => (
-            <DropdownLink to={item.link} key={index}>
+            <DropdownLink
+              activeClass="active"
+              key={index}
+              spy={true}
+              smooth={true}
+              duration={2000}
+              delay={300}
+              to={item.link}
+              activeClassName="selected"
+            >
               {item.title}
             </DropdownLink>
           ))}

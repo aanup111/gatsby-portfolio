@@ -13,7 +13,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <ProjectContainer>
+    <ProjectContainer id="projects">
       <Header data-aos="fade-right">Projects</Header>
 
       <div className="container-fluid d-flex justify-content-center">
