@@ -5,8 +5,32 @@ import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 import { Link } from "react-scroll"
+import { useState } from "react"
 
 const Header = ({ toggle }) => {
+  const [navbar, setNavbar] = useState("none")
+  const Nav = styled.nav`
+    background: transparent;
+    background-color: ${navbar};
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1300px) / 2);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    transition: 0.9s ease-in-out;
+  `
+
+  const changeBackground = () => {
+    if (window.scrollY >= 70) {
+      setNavbar("black")
+    } else {
+      setNavbar("none")
+    }
+  }
+  window.addEventListener("scroll", changeBackground)
+
   return (
     <Nav>
       <Bars onClick={toggle} />
@@ -39,7 +63,7 @@ const Header = ({ toggle }) => {
           to="contact"
           activeClassName="selected"
         >
-          Contact Me
+          Contact
         </Button>
       </NavBtn>
     </Nav>
@@ -47,15 +71,6 @@ const Header = ({ toggle }) => {
 }
 
 export default Header
-
-const Nav = styled.nav`
-  background: transparent;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1300px) / 2);
-  z-index: 1000;
-`
 
 const NavLink = styled(Link)`
   color: white;
@@ -67,6 +82,7 @@ const NavLink = styled(Link)`
   cursor: pointer;
   font-weight: bold;
   font-size: 1.2rem;
+  padding-right: 4rem;
 `
 
 const Bars = styled(FaBars)`

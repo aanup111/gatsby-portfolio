@@ -3,15 +3,11 @@ import styled from "styled-components"
 import { menuData } from "../data/MenuData"
 import { Link } from "react-scroll"
 import { Button } from "./Button"
-import { FaTimes } from "react-icons/fa"
 
 const Dropdown = ({ isOpen, toggle }) => {
   return (
     <Container isOpen={isOpen} onClick={toggle}>
       <DropdownWrapper>
-        <Icon onClick={toggle}>
-          <CloseIcon />
-        </Icon>
         <DropdownMenu>
           {menuData.map((item, index) => (
             <DropdownLink
@@ -23,14 +19,26 @@ const Dropdown = ({ isOpen, toggle }) => {
               delay={300}
               to={item.link}
               activeClassName="selected"
+              onClick={toggle}
             >
               {item.title}
             </DropdownLink>
           ))}
         </DropdownMenu>
         <BtnWrap>
-          <Button primary="true" round="true" big="true" to="/contact">
-            Contact me
+          <Button
+            primary="true"
+            round="true"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={2000}
+            delay={300}
+            to="contact"
+            activeClassName="selected"
+            onClick={toggle}
+          >
+            Contact
           </Button>
         </BtnWrap>
       </DropdownWrapper>
@@ -82,18 +90,4 @@ const DropdownLink = styled(Link)`
 const BtnWrap = styled.div`
   display: flex;
   justify-content: center;
-`
-
-const Icon = styled.div`
-  position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
-  background: transparent;
-  font-size: 2rem;
-  cursor: pointer;
-  outline: none;
-`
-
-const CloseIcon = styled(FaTimes)`
-  color: whitesmoke;
 `

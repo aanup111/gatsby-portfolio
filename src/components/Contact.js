@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <Container id="contact">
       <FormContainer>
-        <FormHeader>Get in touch with me</FormHeader>
+        <FormHeader>Contact me</FormHeader>
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
@@ -35,11 +35,13 @@ const Contact = () => {
                 className="form-control"
                 placeholder="Name"
                 name="name"
+                required="true"
               />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
               <input
                 type="email"
+                required="true"
                 className="form-control"
                 placeholder="Email Address"
                 name="email"
@@ -53,17 +55,19 @@ const Contact = () => {
                 name="subject"
               />
             </div>
-            <div className="col-8 form-group pt-2 mx-auto">
+            <div className="col-8 form-group pt-4 mx-auto">
               <textarea
                 className="form-control"
                 id=""
+                required="true"
                 cols="30"
                 row="8"
                 placeholder="Your message"
                 name="message"
               ></textarea>
             </div>
-            <div className="col-8 pt-3 mx-auto">
+
+            <div className="col-8 pt-4 mx-auto">
               <input
                 type="submit"
                 className="btn btn-info"
@@ -80,16 +84,16 @@ const Contact = () => {
 export default Contact
 
 const Container = styled.div`
-  padding-top: 10rem;
+  padding-top: 20rem;
   display: flex;
   justify-content: center;
-  padding-bottom: 10rem;
-  background-color: black;
+  padding-bottom: 20rem;
+  background-color: whitesmoke;
 `
 
 const FormContainer = styled.div`
   padding-top: 6rem;
-  background-color: white;
+  background-color: #f26a2e;
   border-radius: 10px;
   max-width: 1000px;
   padding-bottom: 5rem;
@@ -97,9 +101,9 @@ const FormContainer = styled.div`
 
 const FormHeader = styled.h1`
   text-align: center;
-  color: grey;
+  color: white;
   font-size: clamp(1.5rem, 4vw, 3rem);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: bold;
   padding: 0 1rem;
 `

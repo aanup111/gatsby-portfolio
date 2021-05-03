@@ -17,7 +17,7 @@ const About = () => {
           real applications.
         </AboutSection>
         <SkillsSection>
-          <MiniTitle>Skills</MiniTitle>
+          <SkillsTitle>Skills</SkillsTitle>
           <Skills>
             <SkillTag>Java</SkillTag>
             <SkillTag>C#</SkillTag>
@@ -47,32 +47,49 @@ export default About
 
 const AboutContainer = styled.div`
   background-color: whitesmoke;
-  padding-top: 14rem;
+  padding-top: 12rem;
   padding-bottom: 22rem;
 `
 
 const AboutWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  padding-top: 14rem;
+  padding-top: 9rem;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 
 const AboutSection = styled.div`
-  max-width: 700px;
-  min-width: 700px;
-  min-height: 400px;
-  max-height: 400px;
+  max-width: 43.75rem;
+  min-width: 43.75rem;
+  min-height: 25rem;
+  max-height: 25rem;
   letter-spacing: 2px;
   word-spacing: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  @media screen and (max-width: 1000px) {
+    max-width: 100vw;
+    min-width: 100vw;
+  }
 `
 
 const SkillsSection = styled.div`
-  max-width: 700px;
-  min-width: 700px;
-  min-height: 400px;
-  max-height: 400px;
+  max-width: 43.75rem;
+  min-width: 43.75rem;
+  min-height: 25rem;
+  max-height: 25rem;
   letter-spacing: 2px;
   word-spacing: 3px;
+  @media screen and (max-width: 1000px) {
+    max-width: 100vw;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
 `
 
 const Skills = styled.div`
@@ -80,14 +97,21 @@ const Skills = styled.div`
   justify-content: space-around;
   align-items: left;
   padding-top: 10px;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: -5.2rem;
+  }
 `
 
 const SkillTag = styled.div`
   background-color: lightgray;
-  max-width: 110px;
-  min-width: 110px;
-  max-height: 50px;
-  min-height: 50px;
+
+  max-width: 6.9rem;
+  min-width: 6.9rem;
+  min-height: 3.1rem;
+  max-height: 3.1rem;
   border-radius: 3px;
   text-align: center;
   padding-top: 13px;
@@ -101,6 +125,7 @@ const Title = styled.h1`
   margin-bottom: 1.5rem;
   letter-spacing: 5px;
   padding: 0 1rem;
+  padding-top: 4rem;
 `
 
 const MiniTitle = styled.h1`
@@ -111,4 +136,18 @@ const MiniTitle = styled.h1`
   padding: 0 1rem;
   text-align: center;
   padding-bottom: 2rem;
+`
+
+const SkillsTitle = styled.h1`
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+  padding: 0 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  @media screen and (max-width: 1000px) {
+    position: relative;
+    left: 9rem;
+  }
 `

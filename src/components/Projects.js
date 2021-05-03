@@ -29,7 +29,7 @@ const Projects = () => {
               appLink={"https://boubee-34260.web.app/"}
             />
           </div>
-          <div className="col-md-4" data-aos="fade-left">
+          <div className="col-md-4" data-aos="fade-right">
             <Project
               image={image2}
               title={"Whatsapp clone"}
@@ -46,7 +46,7 @@ const Projects = () => {
                 "Single page application to retrieve and display data from NBA Api"
               }
               codeLink={"https://github.com/aanup111/Fantasy"}
-              appLink={"https://boubee-34260.web.app/"}
+              appLink={"https://fantasy-theta.vercel.app/"}
             />
           </div>
         </div>
@@ -69,6 +69,7 @@ const Header = styled.h1`
 
 const ProjectContainer = styled.div`
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  // background-color: white;
-  padding-top: 10rem;
+
+  padding-top: 16rem;
+  padding-bottom: 22rem;
 `

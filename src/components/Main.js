@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import MainVideo from "../assets/video.mp4"
-import Typing from "react-typing-animation"
 import FadeIn from "react-fade-in"
 const Main = () => {
   return (
@@ -20,11 +19,11 @@ const Main = () => {
       </MainBg>
       <MainContent>
         <MainItems>
-          <Typing speed={120} hideCursor={true}>
-            <MainH1>Hi, I'm Anup Ghimire</MainH1>
-          </Typing>
-          <FadeIn transitionDuration={9000}>
-            <MainP>Passionate Web Developer</MainP>
+          {/* <Typing speed={120} hideCursor={true}> */}
+          <FadeIn transitionDuration={6000}>
+            <MainH1>Anup Ghimire</MainH1>
+
+            <MainP>Web Developer</MainP>
           </FadeIn>
         </MainItems>
       </MainContent>
@@ -40,7 +39,7 @@ const MainContainer = styled.div`
   justify-content: center;
   color: #fff;
   align-items: center;
-  height: 100vh;
+  height: 105vh;
   padding: 0 1rem;
   position: relative;
   margin-top: -80px;
@@ -110,7 +109,8 @@ const MainH1 = styled.h1`
 `
 
 const MainP = styled.p`
+  font-family: "Open Sans", sans-serif;
   font-size: clamp(1rem, 3vw, 3rem);
   margin-bottom: 2rem;
-  font-weight: 400;
+  font-weight: 300;
 `
