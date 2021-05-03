@@ -65,10 +65,17 @@ const Header = styled.h1`
   font-weight: bold;
   padding: 0 1rem;
   color: white;
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 6.5rem;
+  }
 `
 
 const ProjectContainer = styled.div`
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   padding-top: 16rem;
   padding-bottom: 22rem;
+  @media screen and (max-width: 1000px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 `

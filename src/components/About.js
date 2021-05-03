@@ -49,6 +49,10 @@ const AboutContainer = styled.div`
   background-color: whitesmoke;
   padding-top: 12rem;
   padding-bottom: 22rem;
+  @media screen and (max-width: 1000px) {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
 `
 
 const AboutWrapper = styled.div`
@@ -58,6 +62,7 @@ const AboutWrapper = styled.div`
   @media screen and (max-width: 1000px) {
     flex-direction: column;
     justify-content: center;
+    padding-top: 4rem;
   }
 `
 
@@ -71,9 +76,10 @@ const AboutSection = styled.div`
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   @media screen and (max-width: 1000px) {
-    max-width: 100vw;
-    min-width: 100vw;
-    text-align: center;
+    max-width: 96vw;
+    min-width: 96vw;
+    text-align: left;
+    padding-left: 0.7rem;
   }
 `
 
@@ -102,8 +108,9 @@ const Skills = styled.div`
     flex-direction: column;
     justify-content: center;
     position: relative;
-    left: -5.2rem;
+    left: -6.2rem;
     padding-left: 0.3rem;
+    padding-top: 2rem;
   }
 `
 
@@ -127,6 +134,9 @@ const Title = styled.h1`
   letter-spacing: 5px;
   padding: 0 1rem;
   padding-top: 4rem;
+  @media screen and (max-width: 1000px) {
+    padding-top: 1rem;
+  }
 `
 
 const MiniTitle = styled.h1`
@@ -149,6 +159,8 @@ const SkillsTitle = styled.h1`
   padding-bottom: 2rem;
   @media screen and (max-width: 1000px) {
     position: relative;
-    left: 9rem;
+
+    left: 7.8rem;
+    padding-top: 2rem;
   }
 `

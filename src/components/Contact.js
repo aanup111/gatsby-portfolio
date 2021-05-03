@@ -89,6 +89,10 @@ const Container = styled.div`
   justify-content: center;
   padding-bottom: 20rem;
   background-color: whitesmoke;
+  @media screen and (max-width: 1000px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 `
 
 const FormContainer = styled.div`
