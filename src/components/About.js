@@ -76,8 +76,8 @@ const AboutSection = styled.div`
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   @media screen and (max-width: 1000px) {
-    max-width: 96vw;
-    min-width: 96vw;
+    max-width: 98vw;
+    min-width: 98vw;
     text-align: left;
     padding-left: 0.7rem;
   }
