@@ -8,7 +8,7 @@ import { Link } from "react-scroll"
 import { useState } from "react"
 
 const Header = ({ toggle }) => {
-  const [navbar, setNavbar] = useState("none")
+  const [navbar, setNavbar] = useState("black")
   const Nav = styled.nav`
     background: transparent;
     background-color: ${navbar};
