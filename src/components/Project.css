@@ -10,6 +10,11 @@
   max-height: 43.75rem;
   min-height: 43.75rem;
 }
+@media screen and (max-width: 1000px) {
+  .card {
+    margin-bottom: 6.5rem;
+  }
+}
 
 .card:hover {
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
