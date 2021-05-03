@@ -73,6 +73,7 @@ const AboutSection = styled.div`
   @media screen and (max-width: 1000px) {
     max-width: 100vw;
     min-width: 100vw;
+    text-align: center;
   }
 `
 
@@ -102,12 +103,12 @@ const Skills = styled.div`
     justify-content: center;
     position: relative;
     left: -5.2rem;
+    padding-left: 0.3rem;
   }
 `
 
 const SkillTag = styled.div`
   background-color: lightgray;
-
   max-width: 6.9rem;
   min-width: 6.9rem;
   min-height: 3.1rem;

@@ -60,7 +60,7 @@ export default Projects
 const Header = styled.h1`
   text-align: center;
   font-size: clamp(2.5rem, 8vw, 6rem);
-  margin-bottom: 1.5rem;
+  margin-bottom: 13.5rem;
   letter-spacing: 3px;
   font-weight: bold;
   padding: 0 1rem;
@@ -69,7 +69,6 @@ const Header = styled.h1`
 
 const ProjectContainer = styled.div`
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-
   padding-top: 16rem;
   padding-bottom: 22rem;
 `
