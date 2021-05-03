@@ -67,14 +67,15 @@ const AboutWrapper = styled.div`
 `
 
 const AboutSection = styled.div`
-  max-width: 43.75rem;
-  min-width: 43.75rem;
+  max-width: 46.75rem;
+  flex-grow: 1;
   min-height: 25rem;
   max-height: 25rem;
   letter-spacing: 2px;
   word-spacing: 3px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
+  padding-left: 0.7rem;
   @media screen and (max-width: 1000px) {
     max-width: 98vw;
     min-width: 98vw;
@@ -84,34 +85,34 @@ const AboutSection = styled.div`
 `
 
 const SkillsSection = styled.div`
-  max-width: 43.75rem;
-  min-width: 43.75rem;
+  max-width: 46.75rem;
+  flex-grow: 1;
   min-height: 25rem;
   max-height: 25rem;
   letter-spacing: 2px;
   word-spacing: 3px;
   @media screen and (max-width: 1000px) {
-    max-width: 100vw;
-    min-width: 100vw;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
+    max-width: 98vw;
+    min-width: 98vw;
+    /* display: flex;
+    flex-direction: row; */
   }
 `
 
 const Skills = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: left;
   padding-top: 10px;
-  @media screen and (max-width: 1000px) {
+  /* @media screen and (max-width: 1000px) {
     flex-direction: column;
     justify-content: center;
+    align-items: none;
     position: relative;
     left: -6.2rem;
     padding-left: 0.3rem;
     padding-top: 2rem;
-  }
+  } */
 `
 
 const SkillTag = styled.div`
@@ -158,9 +159,9 @@ const SkillsTitle = styled.h1`
   text-align: center;
   padding-bottom: 2rem;
   @media screen and (max-width: 1000px) {
-    position: relative;
+    /* position: relative;
 
     left: 7.8rem;
-    padding-top: 2rem;
+    padding-top: 2rem; */
   }
 `
