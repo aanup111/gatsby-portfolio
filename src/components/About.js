@@ -126,6 +126,11 @@ const SkillTag = styled.div`
   padding-top: 13px;
   padding-left: 10px;
   padding-right: 10px;
+
+  @media screen and (max-width: 550px) {
+    max-width: fit-content;
+    min-width: fit-content;
+  }
 `
 
 const Title = styled.h1`

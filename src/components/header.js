@@ -44,10 +44,9 @@ const Header = ({ toggle }) => {
             key={index}
             spy={true}
             smooth={true}
-            duration={2000}
+            duration={1000}
             delay={300}
             to={item.link}
-            activeClassName="selected"
           >
             {item.title}
           </NavLink>
@@ -60,10 +59,9 @@ const Header = ({ toggle }) => {
           activeClass="active"
           spy={true}
           smooth={true}
-          duration={2000}
+          duration={1000}
           delay={300}
           to="contact"
-          activeClassName="selected"
         >
           Contact
         </Button>

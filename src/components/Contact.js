@@ -35,13 +35,13 @@ const Contact = () => {
                 className="form-control"
                 placeholder="Name"
                 name="name"
-                required="true"
+                required={true}
               />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
               <input
                 type="email"
-                required="true"
+                required={true}
                 className="form-control"
                 placeholder="Email Address"
                 name="email"
@@ -59,7 +59,7 @@ const Contact = () => {
               <textarea
                 className="form-control"
                 id=""
-                required="true"
+                required={true}
                 cols="30"
                 row="8"
                 placeholder="Your message"
