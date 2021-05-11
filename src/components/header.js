@@ -5,10 +5,10 @@ import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 import { Link } from "react-scroll"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const Header = ({ toggle }) => {
-  const [navbar, setNavbar] = useState("black")
+  const [navbar, setNavbar] = useState("none")
   const Nav = styled.nav`
     background: transparent;
     background-color: ${navbar};
@@ -29,9 +29,11 @@ const Header = ({ toggle }) => {
       setNavbar("none")
     }
   }
-  if (typeof window !== "undefined") {
+
+  useEffect(() => {
     window.addEventListener("scroll", changeBackground)
-  }
+    return () => window.removeEventListener("scroll", changeBackground)
+  }, [])
 
   return (
     <Nav>
