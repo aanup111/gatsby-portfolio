@@ -18,7 +18,6 @@ const Dropdown = ({ isOpen, toggle }) => {
               duration={2000}
               delay={300}
               to={item.link}
-              activeClassName="selected"
               onClick={toggle}
             >
               {item.title}
@@ -35,7 +34,6 @@ const Dropdown = ({ isOpen, toggle }) => {
             duration={2000}
             delay={300}
             to="contact"
-            activeClassName="selected"
             onClick={toggle}
           >
             Contact

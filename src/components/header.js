@@ -1,27 +1,12 @@
 import * as React from "react"
-// import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 import { Link } from "react-scroll"
-import { useState, useEffect } from "react"
 
 const Header = ({ toggle }) => {
-  const [navbar, setNavbar] = useState("black")
-  const Nav = styled.nav`
-    background: transparent;
-    background-color: ${navbar};
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1300px) / 2);
-    z-index: 1000;
-    position: sticky;
-    top: 0;
-    transition: 0.9s ease-in-out;
-  `
-
+  // const [navbar, setNavbar] = useState("black")
   // const changeBackground = () => {
   //   if (window.scrollY >= 70) {
   //     setNavbar("black")
@@ -29,9 +14,9 @@ const Header = ({ toggle }) => {
   //     setNavbar("black")
   //   }
   // }
-
   // useEffect(() => {
   //   window.addEventListener("scroll", changeBackground)
+  //   console.log("test")
   //   return () => window.removeEventListener("scroll", changeBackground)
   // }, [])
 
@@ -73,6 +58,17 @@ const Header = ({ toggle }) => {
 }
 
 export default Header
+const Nav = styled.nav`
+  background-color: black;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1300px) / 2);
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  transition: 0.9s ease-in-out;
+`
 
 const NavLink = styled(Link)`
   color: white;

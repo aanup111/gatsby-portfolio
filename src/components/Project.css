@@ -38,6 +38,8 @@
 .card-img-top {
   transform: scale(1);
   transition: transform 0.5s ease;
+  padding: none !important;
+  border: none !important;
 
   height: auto !important;
   min-height: 16.75rem;

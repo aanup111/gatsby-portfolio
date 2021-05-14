@@ -4,6 +4,7 @@ import styled from "styled-components"
 import image from "../assets/Boubee.png"
 import image2 from "../assets/Whatsapp.png"
 import image3 from "../assets/Fantasy.png"
+import image4 from "../assets/Neftlix.png"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -18,6 +19,17 @@ const Projects = () => {
 
       <div className="container-fluid d-flex justify-content-center">
         <div className="row">
+          <div className="col-md-4" data-aos="fade-right">
+            <Project
+              image={image4}
+              title={"Netflix Clone"}
+              description={
+                "Fully functional Netflix clone using ReactJs and Redux"
+              }
+              codeLink={"https://github.com/aanup111/netflix-clone"}
+              appLink={"https://netflix-clone-83a79.web.app/"}
+            />
+          </div>
           <div className="col-md-4" data-aos="fade-right">
             <Project
               image={image}
