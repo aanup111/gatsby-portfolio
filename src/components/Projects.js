@@ -3,7 +3,6 @@ import Project from "./Project"
 import styled from "styled-components"
 import image from "../assets/Boubee.png"
 import image2 from "../assets/Whatsapp.png"
-import image3 from "../assets/Fantasy.png"
 import image4 from "../assets/Neftlix.png"
 import Aos from "aos"
 import "aos/dist/aos.css"
@@ -48,17 +47,6 @@ const Projects = () => {
               description={"Messaging app using React JS and Next JS"}
               codeLink={"https://github.com/aanup111/Whatsapp-clone"}
               appLink={"https://yes-kappa.vercel.app/"}
-            />
-          </div>
-          <div className="col-md-4" data-aos="fade-right">
-            <Project
-              image={image3}
-              title={"Fantasy Basketball"}
-              description={
-                "Single page application to retrieve and display data from NBA Api"
-              }
-              codeLink={"https://github.com/aanup111/Fantasy"}
-              appLink={"https://fantasy-theta.vercel.app/"}
             />
           </div>
         </div>
