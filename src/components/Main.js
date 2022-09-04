@@ -23,7 +23,7 @@ const Main = () => {
           <FadeIn transitionDuration={6000}>
             <MainH1>Anup Ghimire</MainH1>
 
-            <MainP>Web Developer</MainP>
+            <MainP>Software Developer</MainP>
           </FadeIn>
         </MainItems>
       </MainContent>

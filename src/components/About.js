@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import GetAppIcon from "@material-ui/icons/GetApp"
 
 const About = () => {
   return (
@@ -8,13 +9,21 @@ const About = () => {
       <AboutWrapper>
         <AboutSection>
           <MiniTitle>Hello!</MiniTitle>
-          My name is Anup Ghimire and I am a passionate Web Developer. I love
+          My name is Anup Ghimire and I am a passionate Software Developer. I love
           learning and using various web technologies and libraries to build
           amazing products. Recently I have been learning quite a bit of React
           and building multiple projects using React. As a result, I may have
           fallen in love with React. I find great joy in solving problems,
           learning new technologies and applying those skills in real
           applications.
+          <br />
+          <br />
+          <h2>
+            Resume
+            <a href="/images/myw3schoolsimage.jpg" download>
+              <GetAppIcon />
+            </a>
+          </h2>
         </AboutSection>
         <SkillsSection>
           <SkillsTitle>Skills</SkillsTitle>
