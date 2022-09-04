@@ -8,7 +8,7 @@ const About = () => {
       <AboutWrapper>
         <AboutSection>
           <MiniTitle>Hello!</MiniTitle>
-          My name is Anup Ghimire and I am a passionate Web Developer. I love
+          My name is Anup Ghimire and I am a passionate Software Developer. I love
           learning and using various web technologies and libraries to build
           amazing products. Recently I have been learning quite a bit of React
           and building multiple projects using React. As a result, I may have
